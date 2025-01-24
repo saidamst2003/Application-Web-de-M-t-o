@@ -24,8 +24,13 @@ fetch(url + city)
     description.innerHTML=data.weather[0].description;
     const reem=document.getElementById("img");
     reem.src="https://openweathermap.org/img/wn/"+data.weather[0].icon+ "@2x.png"
-  
-});  }
+    const humidity=document.getElementById("humidity");
+    humidity.innerHTML= data.main.humidity;
+    const Vent=document.getElementById("Vent");
+    Vent.innerHTML=data.wind.speed;
+
+}); 
+ }
 
 function joursMeteo(city){
 // FIRST DAY WEATHER:
@@ -108,6 +113,7 @@ fetch(urlall+city)
     description.innerHTML=data.list[38].weather[0].description;
     const reem=document.getElementById("img5");
     reem.src="https://openweathermap.org/img/wn/"+data.list[38].weather[0].icon+ "@2x.png"
-});  } 
+}); 
+ } 
 
 

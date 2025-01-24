@@ -11,97 +11,89 @@
 
 </head>
 <body>
-    <div class="search-box">
-       <button class="btn border border-none me-4"><i class="fas fa-search search-icon"></i></button>
-        <input id="search-input" type="text" placeholder="Entrer une ville">
-    </div>
-
-
-
-             <div class="card mb-3" style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);border: 1px solid rgba(255, 255, 255, 0.3);
-               backdrop-filter: blur(10px); background: rgba(232, 231, 231, 0.2);max-width: 540px; margin: auto;margin-top: 200px;text-align: center;">
-              
-              <div class="row g-0">
-         <div class="col-md-4">
-         <img id="img" class="reem img-fluid rounded-start" style="margin: 70px; width: 150px;height:150px;">
-               </div>
+         <div class="search-box">
+             <button class="btn border border-none me-4"><i class="fas fa-search search-icon"></i></button>
+             <input id="search-input" type="text" placeholder="Entrer une ville">
+         </div>
+ <div class="card mb-3" style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px); background: rgba(232, 231, 231, 0.2);max-width: 540px; margin: auto;margin-top: 200px;text-align: center;">         
+     <div class="row g-0">
+       <div class="col-md-4">
+         <img id="img" class="reem img-fluid rounded-start" style="margin: 70px; width: 150px;height:150px;"> </div>
           <div class="col-md-8">
           <div class="card-body">
           <h5 id="temp" class="card-title " style="font-size: 40px;margin-top: 50px;"></h5>
           <p  id="city" class="card-text"style="font-size: 20px;"></p>
           <p id= "description" class="card-text"style="font-size: 20px;">  </small></p>
+                <div class=" d-flex justify-content-center w-100">
+                    <div>
+                        <img src="IMAGES/icons8-water-50.png" >
+                       <h1 id="humidity" class="card-text" style="font-size: 20px;"></h1>
+                   </div>
+                     <div>
+                      <img src="IMAGES/icons8-winds-66.png" >
+                        <h1 id="Vent" class="card-text"></h1> 
+                    </div>
+                 </div>
+          </div>
+          </div>
+     </div>
+  </div>
 
-
-        <div class=" d-flex justify-content-center w-100">
-         <div>
-            <img src="IMAGES/icons8-water-50.png" >
-             <h1 id="humd" class="card-text
-             "> </h1> j</div>
-         <div>
-             <img src="IMAGES/icons8-winds-66.png" >
-            <h1 id="Humidite" class="card-text"></h1> </div>
-       </div>
-    </div>
+ <div class="row">
+      <div class="card col-sm-6 col-md-6 col-lg-2 "style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);border: 1px solid rgba(255, 255, 255, 0.3);
+             backdrop-filter: blur(10px); background: rgba(232, 231, 231, 0.2);max-width: 540px; margin: auto;margin-top: 200px;text-align: center;">
+             <img id="img1" class="imgg" src="..." >
+         <div class="card-body">
+             <h5 id="temp-day1" class="card-title " style="font-size: 40px;"></h5>
+             <p  id="city-day1" class="card-text"style="font-size: 20px;"></p>
+             <p id= "description-day1" class="card-text"style="font-size: 20px;"> </small></p>
+         </div>
       </div>
-    </div>
-    </div>
-  </div>
-</div>
-
-  <div class="row">
-    <div class="card col-sm-6 col-md-6 col-lg-2 "style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);border: 1px solid rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(10px); background: rgba(232, 231, 231, 0.2);max-width: 540px; margin: auto;margin-top: 200px;text-align: center;">
-   <img id="img1" class="imgg" src="..." >
-    <div class="card-body">
-    <h5 id="temp-day1" class="card-title " style="font-size: 40px;"></h5>
-    <p  id="city-day1" class="card-text"style="font-size: 20px;"></p>
-    <p id= "description-day1" class="card-text"style="font-size: 20px;"> </small></p>
-  </div>
-  </div>
 
   
-  <div class="card col-sm-6 col-md-6 col-lg-2 "style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);border: 1px solid rgba(255, 255, 255, 0.3);
-     backdrop-filter: blur(10px); background: rgba(232, 231, 231, 0.2);max-width: 540px; margin: auto;margin-top: 200px;text-align: center;">
-    <img id="img2" class="imgg" src="..." >
-    <div class="card-body">
-    <h5 id="temp-day2" class="card-title " style="font-size: 40px;"></h5>
-    <p  id="city-day2" class="card-text"style="font-size: 20px;"></p>
-    <p id= "description-day2" class="card-text"style="font-size: 20px;"> </small></p>
-  </div>
-  </div>
+       <div class="card col-sm-6 col-md-6 col-lg-2 "style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);border: 1px solid rgba(255, 255, 255, 0.3);
+             backdrop-filter: blur(10px); background: rgba(232, 231, 231, 0.2);max-width: 540px; margin: auto;margin-top: 200px;text-align: center;">
+             <img id="img2" class="imgg" src="..." >
+         <div class="card-body">
+              <h5 id="temp-day2" class="card-title " style="font-size: 40px;"></h5>
+              <p id="city-day2" class="card-text"style="font-size: 20px;"></p>
+              <p id= "description-day2" class="card-text"style="font-size: 20px;"> </small></p>
+         </div>
+        </div>
 
-    <div class="card col-sm-6 col-md-6 col-lg-2 "style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);border: 1px solid rgba(255, 255, 255, 0.3);
-       backdrop-filter: blur(10px); background: rgba(232, 231, 231, 0.2);max-width: 540px; margin: auto;margin-top: 200px;text-align: center;">
-      <img id="img3" class="imgg" src="..." >
-      <div class="card-body">
-      <h5 id="temp-day3" class="card-title " style="font-size: 40px;"></h5>
-      <p  id="city-day3" class="card-text"style="font-size: 20px;"></p>
-      <p id= "description-day3" class="card-text"style="font-size: 20px;"> </small></p>
-    </div>
-    </div>
-
-
-
-      <div class="card col-sm-6 col-md-6 col-lg-2 "style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);border: 1px solid rgba(255, 255, 255, 0.3);
-         backdrop-filter: blur(10px); background: rgba(232, 231, 231, 0.2);max-width: 540px; margin: auto;margin-top: 200px;text-align: center;">
-        <img id="img4" class="imgg" src="..." >
-        <div class="card-body">
-        <h5 id="temp-day4" class="card-title " style="font-size: 40px;"></h5>
-        <p  id="city-day4" class="card-text"style="font-size: 20px;"></p>
-        <p id= "description-day4" class="card-text"style="font-size: 20px;"> </small></p>
-      </div>
-      </div>
+       <div class="card col-sm-6 col-md-6 col-lg-2 "style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);border: 1px solid rgba(255, 255, 255, 0.3);
+               backdrop-filter: blur(10px); background: rgba(232, 231, 231, 0.2);max-width: 540px; margin: auto;margin-top: 200px;text-align: center;">
+               <img id="img3" class="imgg" src="..." >
+          <div class="card-body">
+              <h5 id="temp-day3" class="card-title " style="font-size: 40px;"></h5>
+              <p  id="city-day3" class="card-text"style="font-size: 20px;"></p>
+              <p id= "description-day3" class="card-text"style="font-size: 20px;"> </small></p>
+          </div>
+       </div>
 
 
-  <div class="card col-sm-6 col-md-6 col-lg-2 " style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);border: 1px solid rgba(255, 255, 255, 0.3);
-     backdrop-filter: blur(10px); background: rgba(232, 231, 231, 0.2);max-width: 540px; margin: auto;margin-top: 200px;text-align: center;">
-    <img id="img5" class="imgg" src="..." >
-    <div class="card-body">
-    <h5 id="temp-day5" class="card-title " style="font-size: 40px;"></h5>
-    <p  id="city" class="card-text"style="font-size: 20px;"></p>
-    <p id= "description-day5" class="card-text"style="font-size: 20px;"> </small></p>
-  </div>
-  </div>
+
+        <div class="card col-sm-6 col-md-6 col-lg-2 "style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);border: 1px solid rgba(255, 255, 255, 0.3);
+               backdrop-filter: blur(10px); background: rgba(232, 231, 231, 0.2);max-width: 540px; margin: auto;margin-top: 200px;text-align: center;">
+              <img id="img4" class="imgg" src="..." >
+           <div class="card-body">
+              <h5 id="temp-day4" class="card-title " style="font-size: 40px;"></h5>
+              <p  id="city-day4" class="card-text"style="font-size: 20px;"></p>
+              <p id= "description-day4" class="card-text"style="font-size: 20px;"> </small></p>
+          </div>
+        </div>
+
+
+         <div class="card col-sm-6 col-md-6 col-lg-2 " style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);border: 1px solid rgba(255, 255, 255, 0.3);
+                backdrop-filter: blur(10px); background: rgba(232, 231, 231, 0.2);max-width: 540px; margin: auto;margin-top: 200px;text-align: center;">
+               <img id="img5" class="imgg" src="..." >
+            <div class="card-body">
+               <h5 id="temp-day5" class="card-title " style="font-size: 40px;"></h5>
+               <p  id="city" class="card-text"style="font-size: 20px;"></p>
+               <p id= "description-day5" class="card-text"style="font-size: 20px;"> </small></p>
+          </div>
+        </div>
 </div>
 <script src="INDEX.js"></script>
 </body>
