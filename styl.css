@@ -35,6 +35,16 @@ body {
     color: #4e4d4d;
     margin-right: 10px;
 }
-.card{
-    margin: 100px;
+
+.imgg {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+@media (max-width:500px){
+  .cardd {
+    width: fit-content;
+    justify-content: space-between;
+}  
 }
