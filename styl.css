@@ -1,38 +1,43 @@
 body {
     margin: 0;
     padding: 0;
-    height: 200vh; 
+    height: 100vh; /* Katssad 100% mn hauteur dyal viewport */
+    width: 100vw;  /* Katssad 100% mn largeur dyal viewport */
     background-image: url('IMAGES/h.jpg'); 
-    background-size: cover;
-    background-position: center;
+    background-size: cover;  /* Bach tchad l'image kamla f background */
+    background-position: center; /* Tpositioni l'image f center */
+    background-attachment: fixed; /* Katb9a image statique m3a scroll */
 }
 
 
 .search-box {
     display: flex;
-    background: rgba(255, 255, 255, 0.5); 
+    background:#f0ecf5; 
     border-radius: 30px; 
     padding: 10px 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 350px;
     margin-left: 40px;
-    margin-top: 30px;
+  
 }
-
-
 
 .search-box input {
     
     border: none;
-     background: transparent;
+    background: transparent;
     font-size: 16px;
-    color: #333;
+    color: #0d0220;
+    
 }
 
-
+#search-input::placeholder {
+    color: #0d0220; /* Bdel lone hna b lli bghiti */
+    font-style: italic; /* Ila bghiti font style */
+    opacity: 1; /* Bach itban l-color mzyan */
+}
 .search-box .search-icon {
     font-size: 20px;
-    color: #4e4d4d;
+    color: #0d0220;
     margin-right: 10px;
 }
 

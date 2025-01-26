@@ -11,6 +11,8 @@ searchbox.addEventListener('click',()=>{
     joursMeteo(searchInput.value);
  })
 
+
+ 
  function getWeather (city){ 
 fetch(url + city)
 .then(response => response.json())
@@ -47,11 +49,11 @@ fetch(urlaall + city)
     description.innerHTML=data.list[6].weather[0].description;
     const reem=document.getElementById("img1");
     reem.src="https://openweathermap.org/img/wn/"+data.list[6].weather[0].icon +"@2x.png"
+    document.getElementById('day1').innerHTML=new Date(days[0].dt_txt).toLocaleDateString("en-Us",{weekday:"long"});
 
-});  
+});
 //second day weather:
 let urlall ="https://api.openweathermap.org/data/2.5/forecast?units=metric&appid="+key+"&q="
-//let urlall="https://api.openweathermap.org/data/2.5/forecast?lat="+lat+"&lon="+lon+"&appid="+key+"&units=metric";
 fetch(urlall+city)
 .then(response => response.json())
 .then(data => {
@@ -63,11 +65,11 @@ fetch(urlall+city)
     description.innerHTML=data.list[14].weather[0].description;
     const reem=document.getElementById("img2");
     reem.src="https://openweathermap.org/img/wn/"+data.list[14].weather[0].icon +"@2x.png"
+    document.getElementById('day2').innerHTML=new Date(days[0].dt_txt).toLocaleDateString("en-Us",{weekday:"long"});
 
 });   
 //weather on the third day
-let urlaaLll ="https://api.openweathermap.org/data/2.5/forecast?units=metric&appid="+key+"&q="
-//let urlalllL="https://api.openweathermap.org/data/2.5/forecast?lat="+lat+"&lon="+lon+"&appid="+key+"&units=metric";
+let urlaaLll ="https://api.openweathermap.org/data/2.5/forecast?units=metric&appid="+key+"&q="//let urlalllL="https://api.openweathermap.org/data/2.5/forecast?lat="+lat+"&lon="+lon+"&appid="+key+"&units=metric";
 fetch(urlall+city)
 .then(response => response.json())
 .then(data => {
@@ -79,13 +81,13 @@ fetch(urlall+city)
     description.innerHTML=data.list[22].weather[0].description;
     const reem=document.getElementById("img3");
     reem.src="https://openweathermap.org/img/wn/"+data.list[22].weather[0].icon+ "@2x.png"
+    document.getElementById('day3').innerHTML=new Date(days[0].dt_txt).toLocaleDateString("en-Us",{weekday:"long"});
 
 }); 
 
 //weather on the fourth day
 
 let urlaLl ="https://api.openweathermap.org/data/2.5/forecast?units=metric&appid="+key+"&q="
-//let urlalL="https://api.openweathermap.org/data/2.5/forecast?lat="+lat+"&lon="+lon+"&appid="+key+"&units=metric";
 fetch(urlall+city)
 .then(response => response.json())
 .then(data => {
@@ -97,6 +99,7 @@ fetch(urlall+city)
     description.innerHTML=data.list[30].weather[0].description;
     const reem=document.getElementById("img4");
     reem.src="https://openweathermap.org/img/wn/"+data.list[30].weather[0].icon+ "@2x.png"
+    document.getElementById('day4').innerHTML=new Date(days[0].dt_txt).toLocaleDateString("en-Us",{weekday:"long"});
 
 });   
 //weather on the fifth  day
@@ -113,6 +116,8 @@ fetch(urlall+city)
     description.innerHTML=data.list[38].weather[0].description;
     const reem=document.getElementById("img5");
     reem.src="https://openweathermap.org/img/wn/"+data.list[38].weather[0].icon+ "@2x.png"
+    document.getElementById('day5').innerHTML=new Date(days[0].dt_txt).toLocaleDateString("en-Us",{weekday:"long"});
+
 }); 
  } 
 
